@@ -1,0 +1,8 @@
+<p> Wecome to my news aggregator </p>
+<p><a href='/articles/new'>Create A New Article</a></p>
+
+<p><% rows.each do |row| %><p>
+  <p><b>Name: </b> <%= row[0] %></p>
+  <p><b>Url: </b><a href="http://<%= row[1] %>"><%= row[1] %></a></p>
+  <p><b>Description: </b><%= row[2] %></p>
+  <% end %>
